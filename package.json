@@ -1,0 +1,43 @@
+{
+  "name": "ahj-16-homework-env",
+  "version": "1.0.0",
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/pjc1dimy9g6n6nuf/branch/main?svg=true)](https://ci.appveyor.com/project/Nataliya2020/ahj-16-env/branch/main)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "lint": "eslint .",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "author": "Nataliya2020",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-jest": "^27.0.6",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "http-server": "^13.0.1",
+    "image-webpack-loader": "^7.0.1",
+    "jest": "^27.0.6",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.0.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
